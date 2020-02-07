@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--Meta-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!--FontAwesome-->
+  <script src="https://kit.fontawesome.com/d42dc6c6cc.js" crossorigin="anonymous"></script>
+
+  <!--Title-->
+  <title>EverglowUni - Alpha</title>
+
+  <!--Google Font : Poppins-->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400&display=swap" rel="stylesheet">
+
+  <!--CSS-->
+  <link rel="stylesheet" href="css/index.css">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="favicon.png" type="image/png">
+</head>
+<body onload="myLoader()">
+  <!--Loading Animation-->
+    <div class="loader" id="loader">
+      <div class="loader-title">EVERGLOWUNI</div>
+      <div class="loader-object loader-object-1"></div>
+      <div class="loader-object loader-object-2"></div>
+      <div class="loader-object loader-object-3"></div>
+      <div class="loader-object loader-object-4"></div>
+      <div class="loader-object loader-object-5"></div>
+      <div class="loader-object loader-object-6"></div>
+    </div>
+
+  <!--Back To Top Button-->
+  <a id="back-to-top-link" href="#" title="Back To Top" onclick="topFunction()">
+    <div id="back-to-top" class="back-to-top">
+      <i class="fas fa-chevron-up"></i>
+    </div>
+  </a>
+
+  <!--Background Video-->
+  <div id="video-player">
+    <div id="video-player-screen"></div>
+    <video id="video" src="video/Everglow Dun Dun Teaser.mp4" autoplay muted loop></video>
+  </div>
+
+  <!--Navigation Bar-->
+  <div id="navigation">
+    <!--Logo-->
+    <a href="index.html">
+      <div id="logo">
+        <img src="logohome.png" alt="EVERGLOWUNI">
+      </div>
+    </a>
+
+    <!--Navigation Bar Items-->
+    <div id="navbar">
+      <div id="navbar-container">
+        <a href="index.html"><div class="navbar-item">HOME</div></a>
+        <a href="everglow.html"><div class="navbar-item">EVERGLOW</div></a>
+        <a href="media.html"><div class="navbar-item">MEDIA</div></a>
+        <a href="releases.html"><div class="navbar-item">RELEASES</div></a>
+        <a href="notice.html"><div class="navbar-item">NOTICE</div></a>
+        <a href="meettheteam.html"><div class="navbar-item">MEET THE TEAM</div></a>
+        <a href="donate.html"><div class="navbar-item">DONATE</div></a>
+        <a href="credits.html"><div class="navbar-item">CREDITS</div></a>   
+      </div>
+
+      <!--Google Custom Search Bar-->
+      <div id="google-custom-search">
+        <div id="google-search-open" onclick="googleSearchOpen()">
+          <i class="fas fa-search"></i>
+        </div>
+        <div id="google-search-close" onclick="googleSearchClose()">
+          <i class="fas fa-times"></i>
+        </div>
+        <div id="google-search-bar">
+          <script async src="https://cse.google.com/cse.js?cx=015206710342940064235:wo8rtlho9t6"></script>
+          <div class="gcse-search"></div>
+        </div>
+      </div>    
+    </div>
+  </div>
+
+  <!--Title-->
+  <div id="title">
+    <div id="title-main">
+      <!--Name-->
+      <h1>EverGlowUni</h1>
+    </div>
+
+    <!--Description-->
+    <h2>The University of Everglow</h2>
+  </div>
+  <footer>
+      <div id="follow-us">Follow us on Social Media!</div>
+      
+      <!--Twitter-->
+      <a href="#" class="social-media-button" id="twitter-logo-link">
+        <div  class="logo-container" id="twitter-logo">
+          <i class="fab fa-twitter"></i>
+        </div>
+      </a>
+
+      <!--YouTube-->
+      <a href="#" class="social-media-button" id="youtube-logo-link">
+        <div  class="logo-container" id="youtube-logo">
+          <i class="fab fa-youtube"></i>
+        </div>
+      </a>
+
+      <!--Facebook-->
+      <a href="#" class="social-media-button" id="facebook-logo-link">
+        <div  class="logo-container" id="facebook-logo">
+          <i class="fab fa-facebook-f"></i>
+        </div>
+      </a>
+
+      <!--Instagram-->
+      <a href="#" class="social-media-button" id="instagram-logo-link">
+        <div  class="logo-container" id="instagram-logo">
+          <i class="fab fa-instagram"></i>
+        </div>
+      </a>
+      
+      <!--Email-->
+      <a href="#" class="social-media-button" id="email-logo-link">
+        <div class="logo-container" id="email-logo">
+          <i class="far fa-envelope"></i>
+          <div id="email-popup">everglowuni@gmail.com</div>
+        </div>
+      </a>
+
+      <div id="copyright">
+        <a href="LICENCE.md" target="_blank"><i class="far fa-copyright"></i> EverGlowUni, 2020</a>
+      </div>
+  </footer>
+</body>
+  <script src="js/loader.js"></script>
+  <script src="js/googleSearch.js"></script>
+  <script src="js/backtotop.js"></script>
+</html>
